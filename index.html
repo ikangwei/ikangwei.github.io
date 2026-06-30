@@ -1,0 +1,1165 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+
+  <title>Kangwei Xu - Homepage</title>
+  <meta name="description" content="Kangwei Xu - Ph.D. Candidate / Research Assistant at the Chair of Electronic Design Automation, Technical University of Munich.">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="Kangwei Xu">
+  <meta property="og:title" content="Kangwei Xu - Homepage">
+  <meta property="og:description" content="Ph.D. Candidate / Research Assistant at TUM EDA. AI for EDA, High-Level Synthesis, Hardware Acceleration.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://ikangwei.github.io/">
+  <meta property="og:url" content="https://ikangwei.github.io/">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  </script>
+
+  <style>
+    :root {
+      --tum-blue: #0065BD;
+      --tum-blue-dark: #003359;
+      --tum-blue-light: #EAF4FF;
+      --text-black: #000000;
+      --border: #e6e6e6;
+      --bg: #ffffff;
+      --soft-bg: #f8fbff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 20px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-black);
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.82;
+    }
+
+    a {
+      color: var(--tum-blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .masthead__inner-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0.78rem 1rem;
+      box-sizing: border-box;
+    }
+
+    .site-nav {
+      width: 100%;
+    }
+
+    .nav-top {
+      display: none;
+    }
+
+    .site-title {
+      font-weight: 700;
+      color: var(--tum-blue-dark);
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    .site-title:hover {
+      color: var(--tum-blue);
+      text-decoration: none;
+    }
+
+    .visible-links {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .visible-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .masthead__menu-item--lg a {
+      font-weight: 700;
+      color: var(--tum-blue-dark);
+      font-size: 1.1rem;
+    }
+
+    .visible-links a {
+      color: #000000;
+      font-size: 0.99rem;
+    }
+
+    .visible-links a:hover {
+      color: var(--tum-blue);
+      text-decoration: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 2.15rem;
+      height: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 0;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.22rem;
+      box-shadow: 0 3px 10px rgba(0, 101, 189, 0.08);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 1.05rem;
+      height: 2px;
+      background: var(--tum-blue-dark);
+      border-radius: 999px;
+    }
+
+    #main {
+      display: grid;
+      grid-template-columns: 360px minmax(0, 840px);
+      gap: 1.7rem;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 1.35rem 1rem 1.5rem;
+      min-height: calc(100vh - 90px);
+      box-sizing: border-box;
+    }
+
+    .sidebar {
+      align-self: start;
+      position: relative;
+      height: auto;
+    }
+
+    .profile_box {
+      position: fixed;
+      top: 4.5rem;
+      width: 360px;
+      max-height: calc(100vh - 4.2rem);
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.02rem 1.05rem 0.45rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      background: #ffffff;
+      min-height: auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .author__avatar {
+      width: 215px;
+      padding-top: 4px;
+      margin: 0 auto 0.5rem;
+      border: 4px solid var(--tum-blue-light);
+      box-sizing: border-box;
+      background: #ffffff;
+    }
+
+    .author__avatar img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    .author__name {
+      margin: 0;
+      text-align: center;
+      color: var(--tum-blue);
+      font-size: 1.3rem;
+      line-height: 1.25;
+    }
+
+    .author__bio {
+      text-align: center;
+      margin: 0.35rem 0 0.7rem;
+      color: #000000;
+      font-size: 0.98rem;
+      line-height: 1.48;
+    }
+
+    .author__urls {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.96rem;
+      line-height: 1.48;
+    }
+
+    .author__urls li {
+      margin: 0.42rem 0;
+    }
+
+    .author__urls li:first-child {
+      margin-top: 0.05rem;
+    }
+
+    .social-icons i {
+      width: 1.25rem;
+      color: var(--tum-blue);
+    }
+    .copy-email {
+      user-select: text;
+      cursor: text;
+    }
+
+    .page {
+      min-width: 0;
+      width: 100%;
+      max-width: none;
+    }
+
+    h1, h2, h3 {
+      font-family: "Times New Roman", Times, serif;
+      color: var(--tum-blue);
+      line-height: 1.32;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.72rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid var(--tum-blue);
+      font-size: 1.28rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.14rem;
+      margin-top: 1.15rem;
+      margin-bottom: 0.42rem;
+    }
+
+    h3 {
+      color: var(--tum-blue-dark);
+      font-size: 1.08rem;
+      margin: 0.1rem 0 0.28rem;
+    }
+
+    p {
+      margin-top: 0.2rem;
+      margin-bottom: 0.9rem;
+    }
+
+    #about-me p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    section {
+      margin-bottom: 2.1rem;
+      scroll-margin-top: 5.6rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.05rem 1.15rem;
+      background: #ffffff;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+
+    .education-block {
+      margin-bottom: 1.25rem;
+    }
+
+    .education-block h3 {
+      margin: 0.1rem 0 0.2rem;
+    }
+
+    .education-block p {
+      margin-top: 0.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    #education {
+      width: calc(100% + 40px);
+      margin-right: -40px;
+    }
+
+    .edu-row {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      column-gap: 1.4rem;
+      row-gap: 1.2rem;
+      align-items: start;
+      justify-content: start;
+    }
+
+    .edu-nowrap {
+      white-space: nowrap;
+    }
+
+    .edu-logo {
+      height: 40px;
+      max-width: 215px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+
+    .edu-logo-placeholder {
+      height: 40px;
+      margin-bottom: 0.45rem;
+    }
+
+    .company-logo {
+      height: 46px;
+      max-width: 180px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+
+    .intel-logo {
+      margin-bottom: 0.85rem;
+    }
+
+    ul, ol {
+      padding-left: 1.25rem;
+    }
+
+    .pub-list li,
+    .compact-list li {
+      margin-bottom: 0.95rem;
+    }
+
+    #publications .pub-list li {
+      text-align: justify;
+      text-align-last: left;
+      text-justify: inter-word;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    .interest-top li {
+      margin-bottom: 1rem;
+    }
+
+    .interest-row {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 3rem;
+      row-gap: 0;
+      margin-top: 0;
+      padding-left: 1.25rem;
+    }
+
+    .interest-dot {
+      position: relative;
+      padding-left: 1rem;
+      line-height: 1.82;
+    }
+
+    .interest-dot::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #000000;
+      font-weight: normal;
+    }
+
+    .compact-list li::marker {
+      color: #000000;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--tum-blue);
+      color: #ffffff;
+      padding: 0.05rem 0.45rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-right: 0.25rem;
+    }
+
+    #experiences .card {
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    #experiences h3 {
+      margin-top: 0.15rem;
+      margin-bottom: 0.12rem;
+    }
+
+    #experiences p {
+      margin-top: 0.1rem;
+      margin-bottom: 0.05rem;
+      line-height: 1.48;
+    }
+
+    #service .card {
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      margin-bottom: 0.8rem;
+    }
+
+    #service h2 {
+      font-size: 1.02rem;
+      margin-top: 0.6rem;
+      margin-bottom: 0.25rem;
+      color: var(--tum-blue-dark);
+    }
+
+    .visitor-map {
+      text-align: left;
+      padding: 0;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .visitor-map-image img {
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.45rem;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(0, 101, 189, 0.08);
+      pointer-events: none;
+      box-sizing: border-box;
+    }
+
+    .visitor-map-title {
+      color: var(--tum-blue-dark);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .visitor-map-note {
+      font-size: 0.86rem;
+      line-height: 1.45;
+      margin-top: 0.55rem;
+      color: #000000;
+    }
+
+    footer {
+      margin-top: 1.6rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: #000000;
+    }
+
+    @media (max-width: 1000px) {
+      html {
+        font-size: 18px;
+      }
+
+      body {
+        line-height: 1.68;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      }
+
+      .masthead__inner-wrap {
+        max-width: 820px;
+        padding: 0.58rem 0.85rem;
+      }
+
+      .visible-links {
+        justify-content: flex-start;
+        gap: 0.9rem;
+      }
+
+      .masthead__menu-item--lg a {
+        font-size: 1.02rem;
+      }
+
+      .visible-links a {
+        font-size: 0.92rem;
+      }
+
+      #main {
+        grid-template-columns: 1fr;
+        max-width: 820px;
+        padding: 1rem 0.9rem 1.4rem;
+        gap: 1.05rem;
+      }
+
+      .sidebar {
+        position: static;
+        height: auto;
+      }
+
+      .profile_box {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        max-height: none;
+        overflow: visible;
+        border-radius: 18px;
+        padding: 1rem 1rem 0.95rem;
+        box-shadow: 0 8px 22px rgba(0, 101, 189, 0.08);
+        background: #ffffff;
+      }
+
+      .author__avatar {
+        width: 180px;
+        padding-top: 4px;
+        margin-bottom: 0.55rem;
+      }
+
+      .author__name {
+        font-size: 1.24rem;
+      }
+
+      .author__bio {
+        font-size: 0.98rem;
+        line-height: 1.42;
+        margin: 0.35rem 0 0.6rem;
+      }
+
+      .author__urls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.75rem;
+        row-gap: 0.25rem;
+        font-size: 0.92rem;
+        line-height: 1.35;
+      }
+
+      .author__urls li {
+        margin: 0.18rem 0;
+      }
+
+      .page {
+        max-width: 100%;
+      }
+
+      section {
+        margin-bottom: 1.55rem;
+        scroll-margin-top: 4.8rem;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.58rem;
+        padding-bottom: 0.22rem;
+      }
+
+      h2 {
+        font-size: 1.06rem;
+      }
+
+      h3 {
+        font-size: 1.03rem;
+        line-height: 1.28;
+      }
+
+      p {
+        margin-bottom: 0.68rem;
+      }
+
+      .card {
+        border-radius: 13px;
+        padding: 0.85rem 0.9rem;
+        margin-bottom: 0.8rem;
+        box-shadow: 0 5px 16px rgba(0, 101, 189, 0.045);
+      }
+
+      #education {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .edu-row {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.95rem;
+        row-gap: 0.75rem;
+      }
+
+      .education-block {
+        margin-bottom: 0.75rem;
+      }
+
+      .education-block h3 {
+        margin-bottom: 0.18rem;
+      }
+
+      .education-block p {
+        margin-top: 0.12rem;
+        margin-bottom: 0.18rem;
+        line-height: 1.45;
+      }
+
+      #experiences .card {
+        padding-bottom: 0.65rem;
+      }
+
+      #experiences p {
+        margin-bottom: 0;
+      }
+
+      .visitor-map-image img {
+        width: 260px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      html {
+        font-size: 17px;
+      }
+
+      body {
+        line-height: 1.62;
+      }
+
+      .masthead__inner-wrap {
+        padding: 0.52rem 0.75rem;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .visible-links {
+        display: none;
+        margin-top: 0.55rem;
+        padding: 0.55rem 0.65rem;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 101, 189, 0.08);
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        white-space: normal;
+        overflow: visible;
+      }
+
+      .site-nav.is-open .visible-links {
+        display: flex;
+      }
+
+      .visible-links li {
+        border-bottom: 1px solid #edf2f7;
+      }
+
+      .visible-links li:last-child {
+        border-bottom: none;
+      }
+
+      .visible-links a {
+        display: block;
+        padding: 0.42rem 0.15rem;
+        font-size: 0.92rem;
+        line-height: 1.25;
+        color: #000000;
+      }
+
+      .visible-links a:hover {
+        color: var(--tum-blue);
+        text-decoration: none;
+      }
+
+      .masthead__menu-item--lg {
+        display: none;
+      }
+
+      #main {
+        padding: 0.85rem 0.72rem 1.2rem;
+        gap: 0.9rem;
+      }
+
+      .profile_box {
+        padding: 0.9rem 0.85rem;
+        border-radius: 16px;
+      }
+
+      .author__avatar {
+        width: 180px;
+        padding-top: 4px;
+        margin-bottom: 0.5rem;
+      }
+
+      .author__name {
+        font-size: 1.18rem;
+      }
+
+      .author__bio {
+        font-size: 0.95rem;
+        line-height: 1.38;
+        margin: 0.3rem 0 0.55rem;
+      }
+
+      .author__urls {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(max-content, 1fr));
+        justify-content: start;
+        justify-items: start;
+        align-items: center;
+        width: 100%;
+        column-gap: 1.2rem;
+        row-gap: 0.26rem;
+        font-size: 0.92rem;
+        line-height: 1.24;
+        text-align: left;
+      }
+      .author__urls .contact-location,
+      .author__urls .contact-email {
+        grid-column: 1 / -1;
+      }
+
+      .author__urls li {
+        margin: 0;
+        box-sizing: border-box;
+        white-space: nowrap;
+      }
+
+      .author__urls i {
+        width: auto;
+        margin-right: 0.08rem;
+      }
+
+      .author__urls a {
+        white-space: nowrap;
+      }
+
+      section {
+        margin-bottom: 1.35rem;
+      }
+
+      h1 {
+        font-size: 1.15rem;
+        margin-bottom: 0.52rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      #about-me p,
+      #publications .pub-list li {
+        text-align: justify;
+        text-align-last: left;
+        text-justify: inter-word;
+        word-break: normal;
+        overflow-wrap: normal;
+      }
+
+      ul, ol {
+        padding-left: 1.12rem;
+      }
+
+      .pub-list li,
+      .compact-list li {
+        margin-bottom: 0.72rem;
+      }
+
+      .interest-top li {
+        margin-bottom: 0.72rem;
+      }
+
+      .interest-row {
+        grid-template-columns: 1fr;
+        row-gap: 0.05rem;
+        padding-left: 1.12rem;
+      }
+
+      .edu-row {
+        grid-template-columns: 1fr;
+        row-gap: 0.42rem;
+      }
+
+      .edu-row .education-block {
+        margin-bottom: 0;
+      }
+
+      .edu-row .education-block h3 {
+        line-height: 1.24;
+        margin-top: 0;
+        margin-bottom: 0.06rem;
+      }
+
+      .edu-row .education-block p {
+        line-height: 1.34;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      #education > .education-block {
+        margin-bottom: 0.42rem;
+      }
+
+      #education > .education-block h3 {
+        line-height: 1.24;
+        margin-top: 0;
+        margin-bottom: 0.08rem;
+      }
+
+      #education > .education-block p {
+        line-height: 1.36;
+        margin-top: 0.04rem;
+        margin-bottom: 0;
+      }
+
+      .edu-logo-placeholder {
+        display: none;
+      }
+
+      .company-logo {
+        height: 40px;
+        max-width: 160px;
+        margin-bottom: 0.4rem;
+      }
+
+      .intel-logo {
+        margin-bottom: 0.58rem;
+      }
+
+      #experiences .card {
+        padding: 0.75rem 0.78rem 0.55rem;
+        margin-bottom: 0.7rem;
+      }
+
+      #experiences h3 {
+        margin-top: 0.05rem;
+        margin-bottom: 0.08rem;
+      }
+
+      #experiences p {
+        line-height: 1.38;
+        margin-top: 0.05rem;
+        margin-bottom: 0;
+      }
+
+      .visitor-map-image img {
+        width: 250px;
+        border-radius: 10px;
+        padding: 0.36rem;
+      }
+
+      footer {
+        font-size: 0.88rem;
+        margin-top: 1.25rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      html {
+        font-size: 16px;
+      }
+
+      .masthead__inner-wrap {
+        padding: 0.48rem 0.65rem;
+      }
+
+      #main {
+        padding-left: 0.62rem;
+        padding-right: 0.62rem;
+      }
+
+      .profile_box {
+        padding: 0.82rem 0.78rem;
+      }
+
+      .author__avatar {
+        width: 180px;
+        padding-top: 4px;
+      }
+
+      .author__bio {
+        font-size: 0.95rem;
+      }
+
+      .author__urls {
+        grid-template-columns: repeat(2, minmax(max-content, 1fr));
+        justify-content: start;
+        column-gap: 1rem;
+        row-gap: 0.2rem;
+        font-size: 0.92rem;
+      }
+
+      .author__urls i {
+        margin-right: 0.05rem;
+      }
+
+      h1 {
+        font-size: 1.12rem;
+      }
+
+      .tag {
+        font-size: 0.9rem;
+        padding: 0.02rem 0.36rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <nav id="site-nav" class="site-nav">
+        <div class="nav-top">
+          <a class="site-title" href="#about-me">Kangwei Xu</a>
+
+          <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="#about-me">Kangwei Xu</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#research-interests">Research Interests</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#awards">Selected Awards</a></li>
+          <li><a href="#service">Academic Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="main" role="main">
+    <aside class="sidebar sticky">
+      <div class="profile_box" itemscope itemtype="https://schema.org/Person">
+        <div class="author__avatar">
+          <img src="images/kw.jpg" alt="Kangwei Xu">
+        </div>
+
+        <div class="author__content">
+          <h3 class="author__name" itemprop="name">Kangwei Xu</h3>
+          <p class="author__bio">
+            Ph.D. Candidate / Research Assistant<br>
+            Chair of Electronic Design Automation<br>
+            <a href="https://www.tum.de/">Technical University of Munich (TUM)</a>
+          </p>
+        </div>
+
+        <ul class="author__urls social-icons">
+          <li class="contact-location"><i class="fa-solid fa-location-dot"></i> Arcisstr. 21, Munich, Germany</li>
+          <li class="contact-email"><i class="fa-solid fa-envelope"></i> Email: <span class="copy-email">kangwei.xu@tum.de</span></li>
+          <li class="contact-link"><a href="https://scholar.google.com/citations?user=6xNlwPoAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar-square"></i> Google Scholar</a></li>
+          <li class="contact-link"><a href="https://www.linkedin.com/in/kangwei-xu-41957724b/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li class="contact-link"><a href="https://www.researchgate.net/profile/Kangwei-Xu-2"><i class="ai ai-researchgate-square"></i> ResearchGate</a></li>
+          <li class="contact-link"><a href="https://orcid.org/0000-0003-4221-6830"><i class="ai ai-orcid-square"></i> ORCID</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <article class="page" itemscope itemtype="https://schema.org/ProfilePage">
+      <div class="page__inner-wrap">
+
+        <section id="about-me">
+          <h1>About Me</h1>
+          <p>Hi, this is Kangwei Xu. I am now pursuing my Ph.D. degree at the Chair of Electronic Design Automation (EDA), Technical University of Munich (TUM), Munich, Germany, under the supervision of Prof. Ulf Schlichtmann, with guidance from Prof. Bing Li and Prof. Grace Li Zhang. My research focuses on AI for EDA, High-Level Synthesis (HLS), and hardware acceleration. I have published several first-author peer-reviewed papers in major conferences and journals including DAC, ICCAD, TODAES, JETC, ASP-DAC, etc. I currently serve as a peer reviewer for journals including IEEE Transactions on Computers (TC), ACM Transactions on Design Automation of Electronic Systems (TODAES), IEEE Transactions on VLSI Systems (TVLSI), etc.</p>
+        </section>
+
+        <section id="research-interests">
+          <h1>Research Interests</h1>
+          <ul class="compact-list interest-top">
+            <li><strong>AI for Electronic Design Automation (AI for EDA)</strong></li>
+            <li><strong>LLM-Assisted High-Level Synthesis (C/C++/SystemC to RTL)</strong></li>
+          </ul>
+
+          <ul class="compact-list interest-row">
+            <li><strong>Hardware Acceleration</strong></li>
+            <li><strong>Software-Hardware Co-Design</strong></li>
+          </ul>
+        </section>
+
+        <section id="publications">
+          <h1>Publications</h1>
+          <ol class="pub-list">
+            <li><strong>Kangwei Xu</strong>, Bing Li, Ulf Schlichtmann, “LLM for EDA in Front-End Design: Challenges and Opportunities,” ACM/IEEE Design Automation Conference (DAC), 2026.<br><em>Invited Paper in DAC Special Research Session.</em>
+            <li><strong>Kangwei Xu</strong>, Bing Li, Grace Li Zhang, Ulf Schlichtmann, “HLSTester: Efficient Testing of Behavioral Discrepancies with LLMs for High-Level Synthesis,” ACM/IEEE International Conference on Computer-Aided Design (ICCAD), 2025.</li>
+            <li><strong>Kangwei Xu</strong>, Grace Li Zhang, Xunzhao Yin, Cheng Zhuo, Ulf Schlichtmann, Bing Li, “HLSRewriter: Efficient Refactoring and Optimization of C/C++ Code with LLMs for High-Level Synthesis,” ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025.</li>
+            <li><strong>Kangwei Xu</strong>, Grace Li Zhang, Ulf Schlichtmann, Bing Li, “CorrectHDL: Agentic HDL Design with LLMs Leveraging High-Level Synthesis as Reference,” arXiv preprint: 2511.16395, 2025.</li>
+            <li><strong>Kangwei Xu</strong>, Denis Schwachhofer, Jason Blocklove, Ilia Polian, Peter Domanski, Dirk Pflüger, Siddharth Garg, Ramesh Karri, Ozgur Sinanoglu, Johann Knechtel, Zhuorui Zhao, Ulf Schlichtmann, Bing Li, “Large Language Models (LLMs) for Electronic Design Automation (EDA),” IEEE International System-on-Chip Conference (SOCC), 2025.</li>
+            <li><strong>Kangwei Xu</strong>, Grace Li Zhang, Ulf Schlichtmann, Bing Li, “Logic Design of Neural Networks for High Throughput and Low-Power Applications,” ACM/IEEE Asia and South Pacific Design Automation Conference (ASP-DAC), 2024.</li>
+            <li><strong>Kangwei Xu</strong>, Grace Li Zhang, Xunzhao Yin, Cheng Zhuo, Ulf Schlichtmann, Bing Li, “HLSRepair: Automated C/C++ Program Repair for High-Level Synthesis via Large Language Models,” ACM/IEEE International Symposium on Machine Learning for Computer-Aided Design (MLCAD), 2024.</li>
+            <li><strong>Kangwei Xu</strong>, Ruidi Qiu, Zhuorui Zhao, Grace Li Zhang, Ulf Schlichtmann, Bing Li, “LLM-Aided Efficient Hardware Design Automation,” arXiv preprint arXiv:2410.18582.</li>
+            <li><strong>Kangwei Xu</strong>, Dongrong Zhang, Qiang Ren, Yuanqing Cheng, Patrick Girard, “An Area-Efficient and Reliable PUF Design with Signature Improvement for STT-mCell Based All-Spin Circuits,” ACM Journal on Emerging Technologies in Computing Systems (JETC), 2022.</li>
+            <li><strong>Kangwei Xu</strong>, Yuanqing Cheng, “Fault Testing and Diagnosis Techniques for CNT-Based FPGAs,” ACM/IEEE Asia and South Pacific Design Automation Conference (ASP-DAC), 2022.</li>
+            <li>S. Lu, <strong>Kangwei Xu</strong>, P. Xie, R. Wang, Y. Cheng, “Testing and Fault Tolerance Techniques for CNT-based FPGAs,” Elsevier Integration, the VLSI Journal, 2025.</li>
+            <li>R. Chen, L. Chen, J. Liang, Y. Cheng, S. Elloumi, J. Lee, <strong>Kangwei Xu</strong>, V. P. Georgiev, K. Ni, P. Debacker, A. Asenov, A. Todri-Sanial, “Carbon Nanotube SRAM in 5-nm Technology Node Design, Optimization, and Performance Evaluation—Part I: CNFET Transistor Optimization,” IEEE Transactions on Very Large Scale Integration Systems (TVLSI), 2022.</li>
+            <li>R. Chen, L. Chen, J. Liang, Y. Cheng, S. Elloumi, J. Lee, <strong>Kangwei Xu</strong>, V. P. Georgiev, K. Ni, P. Debacker, A. Asenov, A. Todri-Sanial, “Carbon Nanotube SRAM in 5-nm Technology Node Design, Optimization, and Performance Evaluation—Part II: CNT Interconnect Optimization,” IEEE Transactions on Very Large Scale Integration Systems (TVLSI), 2022.</li>
+            <li>C. K. Jha, M. Hassan, K. Qayyum, S. Ahmadi-Pour, <strong>Kangwei Xu</strong>, R. Qiu, J. Blocklove, L. Collini, A. Nakkab, U. Schlichtmann, G. L. Zhang, R. Karri, B. Li, S. Garg, R. Drechsler, “Large Language Models (LLMs) for Verification, Testing, and Design,” IEEE European Test Symposium (ETS), 2025.</li>
+          </ol>
+        </section>
+
+        <section id="education">
+          <h1>Education</h1>
+
+          <div class="education-block">
+            <h3>Technical University of Munich (TUM), Munich, Germany</h3>
+            <p><em>2022.11 &ndash; Present:</em> Ph.D. Candidate at the Chair of Electronic Design Automation (EDA)<br>
+            School of Computation, Information and Technology<br>
+            Ph.D. Dissertation: LLM-Based Agentic High-Level Synthesis and HDL Circuit Generation</p>
+          </div>
+
+          <div class="edu-row">
+            <div class="education-block">
+              <h3>Beihang University, Beijing, China</h3>
+              <p>M.Eng. in Electronic Science and Technology<br>
+              School of Electronic and Information Engineering<br>
+              GPA: 85.85/100; Rank: 6/25</p>
+            </div>
+
+            <div class="education-block">
+              <h3>Tiangong University, Tianjin, China</h3>
+              <p>B.Eng. in Telecommunication Engineering<br>
+              School of Electronic and Information Engineering<br>
+              GPA: 89.85/100; Rank: 2/109</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="experiences">
+          <h1>Experiences</h1>
+
+          <div class="card">
+            <img class="company-logo intel-logo" src="images/intel.png" alt="Intel logo">
+            <h3>Client Computing Group</h3>
+            <p>Internship, Beijing, 09/2021 &ndash; 12/2021</p>
+          </div>
+
+          <div class="card">
+            <img class="company-logo" src="images/synopsys.png" alt="Synopsys logo">
+            <h3>IC Validator Department</h3>
+            <p>Internship, Shanghai, 05/2020 &ndash; 08/2020</p>
+          </div>
+        </section>
+
+        <section id="awards">
+          <h1>Selected Awards</h1>
+          <ul class="compact-list">
+            <li>IEEE Council on Electronic Design Automation (IEEE CEDA) Student Travel Grant, 2024</li>
+            <li>IEEE Circuits and Systems (IEEE CAS) Society Student Travel Grant, 2021 and 2025</li>
+            <li>First Prize, National Undergraduate Mathematical Contest in Modeling, Tianjin Division, China</li>
+          </ul>
+        </section>
+
+        <section id="service">
+          <h1>Academic Service</h1>
+
+          <div class="card">
+            <h2>Journal Reviewer:</h2>
+            <ul class="compact-list">
+              <li>IEEE Transactions on Computers (TC), 2026&ndash;Present</li>
+              <li>ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025&ndash;Present</li>
+              <li>IEEE Transactions on Very Large Scale Integration Systems (TVLSI), 2024&ndash;Present</li>
+              <li>Elsevier Integration, the VLSI Journal, 2024&ndash;Present</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Technical Program Committee Member:</h2>
+            <ul class="compact-list">
+              <li>IEEE International Symposium of EDA (ISEDA), 2026</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="hobbies">
+          <h1>Hobbies</h1>
+          <p>Swimming (University PE Score: 100), piano, and painting.</p>
+        </section>
+
+        <section id="visitor-map">
+          <h1>Visitor Map</h1>
+          <div class="visitor-map visitor-map-image">
+            <img src="https://mapmyvisitors.com/map.png?d=i7nibn76VOjErjYZT32IAkkycuD3sbLVWFv4dmByI4s&cl=ffffff" alt="Visitor map">
+          </div>
+        </section>
+
+        <footer>
+          <p>© Kangwei Xu. Powered by GitHub Pages. Website under Test Run. Created: July 2026.</p>
+        </footer>
+
+      </div>
+    </article>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener('click', function () {
+        const isOpen = siteNav.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      document.querySelectorAll('.visible-links a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          siteNav.classList.remove('is-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
